@@ -13,6 +13,19 @@
       But wait 5 seconds
       Then verify that the homepage opens and the Sign Out link appears
 
+    Scenario: TC02 When registering as a customer to the site,
+              lower case, upper case, numbers and special characters should be entered in the username input.
+
+      Given go to Url
+      When click on the Register link
+      And enter a data in the Username input
+      And enter a data in the Your Email address input
+      And enter a data in the password input
+      And select "I agree to the privacy policy" box
+      And click to Sign Up box
+      But wait 5 seconds
+      Then verify that the homepage opens and the Sign Out link appears
+
 
 
 
